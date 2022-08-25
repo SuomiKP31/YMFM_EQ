@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="J8Q2BQ" name="YMFM" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              cppLanguageStandard="17" pluginFormats="buildStandalone,buildUnity,buildVST3">
+  <MAINGROUP id="SLhwLQ" name="YMFM">
+    <GROUP id="{A5922BE0-18C9-01D9-B588-A8057C7305DE}" name="TapeStop">
+      <FILE id="mwfeCD" name="TapeStop.h" compile="0" resource="0" file="Source/TapeStop/TapeStop.h"/>
+    </GROUP>
+    <GROUP id="{AC24CD5D-242F-4D10-2269-41505EE10714}" name="DelayRelatedEffect">
+      <FILE id="rWSey0" name="LFO.cpp" compile="1" resource="0" file="Source/DelayRelatedEffect/LFO.cpp"/>
+      <FILE id="oyzYzB" name="LFO.h" compile="0" resource="0" file="Source/DelayRelatedEffect/LFO.h"/>
+    </GROUP>
+    <GROUP id="{245FE5DA-8AB2-8491-0E63-6D9969F370FE}" name="DSPProcessorUnits">
+      <FILE id="tHargb" name="BitCrusherProcessor.cpp" compile="1" resource="0"
+            file="Source/DSPProcessorUnits/BitCrusherProcessor.cpp"/>
+      <FILE id="GzJP84" name="BitCrusherProcessor.h" compile="0" resource="0"
+            file="Source/DSPProcessorUnits/BitCrusherProcessor.h"/>
+      <FILE id="ZBNJH4" name="FlangerProcessor.cpp" compile="1" resource="0"
+            file="Source/DSPProcessorUnits/FlangerProcessor.cpp"/>
+      <FILE id="vE6sw2" name="FlangerProcessor.h" compile="0" resource="0"
+            file="Source/DSPProcessorUnits/FlangerProcessor.h"/>
+      <FILE id="kZ5xsF" name="GateProcessor.cpp" compile="1" resource="0"
+            file="Source/DSPProcessorUnits/GateProcessor.cpp"/>
+      <FILE id="cdazFy" name="GateProcessor.h" compile="0" resource="0" file="Source/DSPProcessorUnits/GateProcessor.h"/>
+      <FILE id="UDHiv0" name="PhaserProcessor.cpp" compile="1" resource="0"
+            file="Source/DSPProcessorUnits/PhaserProcessor.cpp"/>
+      <FILE id="GDN5s3" name="PhaserProcessor.h" compile="0" resource="0"
+            file="Source/DSPProcessorUnits/PhaserProcessor.h"/>
+      <FILE id="mj46qb" name="RepeatProcessor.cpp" compile="1" resource="0"
+            file="Source/DSPProcessorUnits/RepeatProcessor.cpp"/>
+      <FILE id="DaJLLo" name="RepeatProcessor.h" compile="0" resource="0"
+            file="Source/DSPProcessorUnits/RepeatProcessor.h"/>
+      <FILE id="okhfUl" name="TapeStopProcessor.cpp" compile="1" resource="0"
+            file="Source/DSPProcessorUnits/TapeStopProcessor.cpp"/>
+      <FILE id="iEnCxe" name="TapeStopProcessor.h" compile="0" resource="0"
+            file="Source/DSPProcessorUnits/TapeStopProcessor.h"/>
+    </GROUP>
+    <GROUP id="{CBCC8FCA-B727-8B62-FA99-E1C1EE7B6B75}" name="Gate">
+      <FILE id="v3aXPj" name="Gate.cpp" compile="1" resource="0" file="Source/Gate/Gate.cpp"/>
+      <FILE id="qMT0CU" name="Gate.h" compile="0" resource="0" file="Source/Gate/Gate.h"/>
+    </GROUP>
+    <GROUP id="{624830E5-06B0-3324-E052-6F087E630442}" name="Repeat">
+      <FILE id="cfVwSv" name="AnimatorByCount.h" compile="0" resource="0"
+            file="Source/Repeat/AnimatorByCount.h"/>
+      <FILE id="pg5ZPS" name="AttachedControlBase.h" compile="0" resource="0"
+            file="Source/Repeat/AttachedControlBase.h"/>
+      <FILE id="UwIoWe" name="Repeat.h" compile="0" resource="0" file="Source/Repeat/Repeat.h"/>
+    </GROUP>
+    <GROUP id="{AA0006D6-8DCC-D6A3-F57F-44412B73CDAC}" name="Resources">
+      <FILE id="pb3f7l" name="YMFM.png" compile="0" resource="1" file="Resources/YMFM.png"/>
+    </GROUP>
+    <GROUP id="{0463D79B-27C2-6E59-DBC3-6CCDF02E221E}" name="Source">
+      <FILE id="WzP23i" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="Frl0KY" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="ODK99r" name="TimeDomainProcessingComponent.cpp" compile="1"
+            resource="0" file="Source/TimeDomainProcessingComponent.cpp"/>
+      <FILE id="JKWqp0" name="TimeDomainProcessingComponent.h" compile="0"
+            resource="0" file="Source/TimeDomainProcessingComponent.h"/>
+      <FILE id="A6BXry" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="vrMqQX" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SimpleEQ"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SimpleEQ"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_dsp" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="H:\JuceProject\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="H:\JuceProject\JUCE\modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
